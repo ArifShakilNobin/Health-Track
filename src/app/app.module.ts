@@ -8,6 +8,7 @@ import en from '@angular/common/locales/en';
 import { HttpClientModule } from '@angular/common/http';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { SharedModule } from './shared/shared/shared.module';
+import { NgMaterialModule } from './NgMaterial.module';
 
 registerLocaleData(en);
 
@@ -19,6 +20,7 @@ registerLocaleData(en);
     HttpClientModule,
     BrowserAnimationsModule,
     SharedModule,
+    NgMaterialModule,
   ],
   providers: [DatePipe, DatePipe, TitleCasePipe],
   bootstrap: [AppComponent],
