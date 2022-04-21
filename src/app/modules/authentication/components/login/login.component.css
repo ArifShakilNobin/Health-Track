@@ -1,0 +1,20 @@
+.example-card {
+    max-width: 400px;
+    margin-left: 480px;
+    margin-top: 200px;
+  }
+  /* :host {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+  } */
+  .input{
+    width: 398px
+  }
+
+  .text-align{
+    text-align: center;
+  }
+  .login-button{
+    margin-left: 90px;
+  }
