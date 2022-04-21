@@ -3,11 +3,15 @@ import { RouterModule, Routes } from '@angular/router';
 import { LoginComponent } from './modules/authentication/components/login/login.component';
 
 const routes: Routes = [
-  {path:'login', component: LoginComponent}
+  // {path:'login', component: LoginComponent},
+  {
+    path: 'login',
+    loadChildren: () =>import('./modules/authentication/authentication.module').then((m) => m.AuthenticationModule),
+  },
 ];
 
 @NgModule({
-  imports: [RouterModule.forRoot(routes, { useHash: true })],
+  imports: [RouterModule.forRoot(routes, { useHash: false })],
   exports: [RouterModule],
 })
 export class AppRoutingModule {}
