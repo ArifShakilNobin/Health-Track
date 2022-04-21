@@ -14,7 +14,7 @@ export const applicationUrls = {
     delete: 'delete-permission',
   },
   user: {
-    login: environment.baseApiUrl + 'api/auth/signin/',
+    login: environment.baseApiUrl + '/api/Authenticate/login',
   },
   
 
