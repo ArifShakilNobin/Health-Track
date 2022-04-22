@@ -12,6 +12,7 @@ import { NgMaterialModule } from './NgMaterial.module';
 import { ToastrModule } from 'ngx-toastr';
 import { MyInterceptor } from './shared/services/http-interceptor/MyInterceptor';
 import { AuthGuard } from './shared/services/auth-Guard/auth-guard.service';
+import { CoreModule } from './core/core.module';
 
 registerLocaleData(en);
 
@@ -21,6 +22,7 @@ registerLocaleData(en);
     BrowserModule,
     AppRoutingModule,
     HttpClientModule,
+    CoreModule,
     BrowserAnimationsModule,
     SharedModule,
     NgMaterialModule,
