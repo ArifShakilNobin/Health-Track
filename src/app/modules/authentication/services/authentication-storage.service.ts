@@ -4,6 +4,7 @@ import { HttpClient } from '@angular/common/http';
 import { Injectable } from '@angular/core';
 import { Observable } from 'rxjs';
 import { Login } from '../models/login';
+import { Registration } from '../models/registration';
 
 @Injectable({
   providedIn: 'root',
@@ -21,4 +22,16 @@ export class AuthenticationStorageService {
     //   })
     // );
   }
+
+  registration(register: Registration): Observable<any> {
+    return this.httpClient.post<ServerResponse>(`${applicationUrls.user.registration}`,register );
+    // .pipe(
+    //   tap((res) => {
+    //     if (res.data) {
+    //       this.authorizationService.addDesignation(res.data);
+    //     }
+    //   })
+    // );
+  }
+
 }

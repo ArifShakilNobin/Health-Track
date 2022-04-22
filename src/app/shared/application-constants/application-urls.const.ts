@@ -15,6 +15,7 @@ export const applicationUrls = {
   },
   user: {
     login: environment.baseApiUrl + '/api/Authenticate/login',
+    registration: environment.baseApiUrl + '/api/Authenticate/register',
     user: environment.baseApiUrl + '/api/Users'
   },
   
