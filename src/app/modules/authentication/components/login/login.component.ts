@@ -43,7 +43,7 @@ export class LoginComponent implements OnInit {
         localStorage.setItem("accessToken", token);
         localStorage.setItem("refreshToken", refreshToken);
         // this.invalidLogin = false;
-        this.router.navigate(["/"]);
+        this.router.navigate(["/home"]);
       },
       error: (err) => {
         this.notification.showError("Invalid username or password.", "Error")
